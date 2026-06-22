@@ -75,7 +75,7 @@ export default function Home() {
         }}>
           <div style={{ maxWidth: 560 }}>
             <div style={{
-              display: 'inline-block', background: 'rgba(168,130,77,0.9)',
+              display: 'inline-block', background: 'rgba(37,99,235,0.9)',
               color: 'white', fontSize: 11, fontWeight: 700, letterSpacing: 3,
               textTransform: 'uppercase', padding: '6px 16px', borderRadius: 100, marginBottom: 20,
             }}>
