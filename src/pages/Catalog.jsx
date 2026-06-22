@@ -163,7 +163,7 @@ export default function Catalog() {
   return (
     <div style={{ paddingTop: 72, minHeight: '100vh', background: '#f0f6ff' }}>
       <div style={{ background: '#1e293b', padding: '36px 24px' }}>
-        <div style={{ maxWidth: 1400, margin: '0 auto' }}>
+        <div style={{ maxWidth: 1600, margin: '0 auto'}}>
           <h1 style={{ fontFamily: "'Playfair Display', serif", color: 'white', fontSize: 'clamp(26px,4vw,40px)', marginBottom: 6 }}>
             Catálogo de Móveis
           </h1>
@@ -173,7 +173,7 @@ export default function Catalog() {
         </div>
       </div>
 
-      <div style={{ maxWidth: 1400, margin: '0 auto', padding: '20px 16px 48px' }}>
+      <div style={{ maxWidth: 1400, margin: '0 auto', padding: '20px 8px 48px' }}>
         {/* Search + sort bar */}
         <div style={{ display: 'flex', gap: 10, marginBottom: 18, flexWrap: 'wrap' }}>
           <div style={{ flex: 1, minWidth: 200, position: 'relative' }}>

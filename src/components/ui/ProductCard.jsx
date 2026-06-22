@@ -90,15 +90,12 @@ export default function ProductCard({ product }) {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                flex: 1, height: 36, borderRadius: 8, background: '#25D366',
+                width: 36, height: 36, borderRadius: 8, background: '#25D366',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                color: 'white', textDecoration: 'none',
-                fontSize: 12, fontWeight: 600, gap: 6,
-                whiteSpace: 'nowrap', minWidth: 0,
+                color: 'white', textDecoration: 'none', flexShrink: 0,
               }}
             >
-              <MessageCircle size={14} style={{ flexShrink: 0 }} />
-              WhatsApp
+              <MessageCircle size={16} />
             </a>
           </div>
         </div>
