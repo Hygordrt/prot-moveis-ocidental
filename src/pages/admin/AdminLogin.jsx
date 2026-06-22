@@ -46,7 +46,7 @@ export default function AdminLogin() {
           }}>
             <span style={{ color: 'white', fontSize: 28, fontFamily: 'serif' }}>M</span>
           </div>
-          <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 24, color: '#1e293b', margin: '0 0 6px' }}>
+          <h1 style={{ fontFamily: "'Inter', sans-serif", fontSize: 24, color: '#1e293b', margin: '0 0 6px' }}>
             Área Administrativa
           </h1>
           <p style={{ fontSize: 14, color: '#64748b' }}>Móveis Ocidental — Painel Admin</p>

@@ -33,7 +33,7 @@ export default function Inventory() {
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 28, flexWrap: 'wrap', gap: 16 }}>
         <div>
-          <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 28, color: '#1e293b', marginBottom: 4 }}>Estoque</h1>
+          <h1 style={{ fontFamily: "'Inter', sans-serif", fontSize: 28, color: '#1e293b', marginBottom: 4 }}>Estoque</h1>
           <p style={{ fontSize: 14, color: '#64748b' }}>{filtered.length} produto{filtered.length !== 1 ? 's' : ''}</p>
         </div>
         <Link
@@ -179,7 +179,7 @@ export default function Inventory() {
         <div style={{ position: 'fixed', inset: 0, zIndex: 300, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
           <div style={{ background: 'white', borderRadius: 20, padding: 32, maxWidth: 400, width: '100%', textAlign: 'center' }}>
             <div style={{ fontSize: 40, marginBottom: 16 }}>🗑️</div>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", color: '#1e293b', marginBottom: 8 }}>Excluir produto?</h3>
+            <h3 style={{ fontFamily: "'Inter', sans-serif", color: '#1e293b', marginBottom: 8 }}>Excluir produto?</h3>
             <p style={{ fontSize: 14, color: '#64748b', marginBottom: 24 }}>
               <strong>{confirmDelete.name}</strong> será removido permanentemente.
             </p>

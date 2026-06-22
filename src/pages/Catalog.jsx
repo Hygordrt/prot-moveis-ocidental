@@ -164,7 +164,7 @@ export default function Catalog() {
     <div style={{ paddingTop: 72, minHeight: '100vh', background: '#f0f6ff' }}>
       <div style={{ background: '#1e293b', padding: '36px 24px' }}>
         <div style={{ maxWidth: 1600, margin: '0 auto'}}>
-          <h1 style={{ fontFamily: "'Playfair Display', serif", color: 'white', fontSize: 'clamp(26px,4vw,40px)', marginBottom: 6 }}>
+          <h1 style={{ fontFamily: "'Inter', sans-serif", color: 'white', fontSize: 'clamp(26px,4vw,40px)', marginBottom: 6 }}>
             Catálogo de Móveis
           </h1>
           <p style={{ color: '#93c5fd', fontSize: 14 }}>
@@ -235,7 +235,7 @@ export default function Catalog() {
             position: 'sticky', top: 88, maxHeight: 'calc(100vh - 100px)', overflowY: 'auto',
           }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-              <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, color: '#1e293b', fontSize: 15 }}>Filtros</span>
+              <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, color: '#1e293b', fontSize: 15 }}>Filtros</span>
               {activeFilters.length > 0 && (
                 <button onClick={clearAll} style={{ fontSize: 11, color: '#2563eb', background: 'none', border: 'none', cursor: 'pointer', fontWeight: 600 }}>
                   Limpar
@@ -250,7 +250,7 @@ export default function Catalog() {
             {filtered.length === 0 ? (
               <div style={{ textAlign: 'center', padding: '80px 24px' }}>
                 <div style={{ fontSize: 48, marginBottom: 16 }}>🔍</div>
-                <h3 style={{ fontFamily: "'Playfair Display', serif", color: '#1e293b', marginBottom: 8 }}>Nenhum produto encontrado</h3>
+                <h3 style={{ fontFamily: "'Inter', sans-serif", color: '#1e293b', marginBottom: 8 }}>Nenhum produto encontrado</h3>
                 <p style={{ color: '#64748b', fontSize: 15 }}>Tente ajustar os filtros ou o termo de busca.</p>
                 <button onClick={clearAll} style={{
                   marginTop: 20, padding: '10px 24px', background: '#2563eb',
@@ -291,7 +291,7 @@ export default function Catalog() {
               padding: 24, maxHeight: '85vh', overflowY: 'auto',
             }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 20 }}>
-              <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 18, color: '#1e293b' }}>Filtros</span>
+              <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: '#1e293b' }}>Filtros</span>
               <button onClick={() => setFilterOpen(false)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#334155' }}>
                 <X size={24} />
               </button>

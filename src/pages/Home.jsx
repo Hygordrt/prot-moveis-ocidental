@@ -82,7 +82,7 @@ export default function Home() {
               15 anos de qualidade
             </div>
             <h1 style={{
-              fontFamily: "'Playfair Display', serif",
+              fontFamily: "'Inter', sans-serif",
               fontSize: 'clamp(36px, 5vw, 68px)',
               color: 'white', lineHeight: 1.1, marginBottom: 20,
               textShadow: '0 2px 20px rgba(0,0,0,0.3)',
@@ -95,15 +95,16 @@ export default function Home() {
             }}>
               {heroImages[heroIdx].sub}
             </p>
-            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+            <div className="hero-btns" style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
               <Link
                 to="/catalogo"
+                className="hero-btn-primary"
                 style={{
                   display: 'flex', alignItems: 'center', gap: 8,
                   background: '#2563eb', color: 'white',
                   padding: '14px 28px', borderRadius: 100,
                   textDecoration: 'none', fontSize: 15, fontWeight: 600,
-                  transition: 'all 0.2s', boxShadow: '0 4px 16px rgba(168,130,77,0.4)',
+                  transition: 'all 0.2s', boxShadow: '0 4px 16px rgba(37,99,235,0.4)',
                 }}
               >
                 Ver Catálogo <ArrowRight size={18} />
@@ -112,6 +113,7 @@ export default function Home() {
                 href="https://wa.me/5511999999999"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hero-btn-secondary"
                 style={{
                   display: 'flex', alignItems: 'center', gap: 8,
                   background: 'rgba(255,255,255,0.15)', color: 'white',
@@ -144,8 +146,8 @@ export default function Home() {
         </div>
         <button
           onClick={() => setHeroIdx(i => (i - 1 + heroImages.length) % heroImages.length)}
+          className="hero-arrow hero-arrow-left"
           style={{
-            position: 'absolute', left: 20, top: '50%', transform: 'translateY(-50%)',
             background: 'rgba(255,255,255,0.2)', border: 'none', cursor: 'pointer',
             width: 44, height: 44, borderRadius: '50%', display: 'flex', alignItems: 'center',
             justifyContent: 'center', color: 'white', backdropFilter: 'blur(4px)',
@@ -155,8 +157,8 @@ export default function Home() {
         </button>
         <button
           onClick={() => setHeroIdx(i => (i + 1) % heroImages.length)}
+          className="hero-arrow hero-arrow-right"
           style={{
-            position: 'absolute', right: 20, top: '50%', transform: 'translateY(-50%)',
             background: 'rgba(255,255,255,0.2)', border: 'none', cursor: 'pointer',
             width: 44, height: 44, borderRadius: '50%', display: 'flex', alignItems: 'center',
             justifyContent: 'center', color: 'white', backdropFilter: 'blur(4px)',
@@ -185,7 +187,7 @@ export default function Home() {
             <div style={{ display: 'flex', gap: 32 }}>
               {[['15+', 'Anos de experiência'], ['3.000+', 'Clientes satisfeitos'], ['500+', 'Produtos em catálogo']].map(([n, l]) => (
                 <div key={l}>
-                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 32, fontWeight: 700, color: '#2563eb' }}>{n}</div>
+                  <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 32, fontWeight: 700, color: '#2563eb' }}>{n}</div>
                   <div style={{ fontSize: 13, color: '#64748b' }}>{l}</div>
                 </div>
               ))}
@@ -237,7 +239,7 @@ export default function Home() {
                     position: 'absolute', bottom: 16, left: 16, right: 16,
                   }}>
                     <div style={{ fontSize: 22, marginBottom: 4 }}>{cat.icon}</div>
-                    <div style={{ fontFamily: "'Playfair Display', serif", color: 'white', fontSize: 16, fontWeight: 600 }}>
+                    <div style={{ fontFamily: "'Inter', sans-serif", color: 'white', fontSize: 16, fontWeight: 600 }}>
                       {cat.label}
                     </div>
                   </div>
@@ -249,6 +251,14 @@ export default function Home() {
         <style>{`
           .cat-card:hover { transform: translateY(-4px); }
           .cat-card:hover .cat-img { transform: scale(1.08); }
+          .hero-arrow { position: absolute; top: 50%; transform: translateY(-50%); }
+          .hero-arrow-left { left: 20px; }
+          .hero-arrow-right { right: 20px; }
+          @media (max-width: 600px) {
+            .hero-btns { flex-direction: column; gap: 10px; }
+            .hero-btn-primary, .hero-btn-secondary { justify-content: center; padding: 12px 20px; font-size: 14px; }
+            .hero-arrow { display: none !important; }
+          }
         `}</style>
       </section>
 

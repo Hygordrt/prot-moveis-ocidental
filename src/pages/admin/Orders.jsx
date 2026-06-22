@@ -59,7 +59,7 @@ export default function Orders() {
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 28, flexWrap: 'wrap', gap: 16 }}>
         <div>
-          <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 28, color: '#1e293b', marginBottom: 4 }}>Pedidos</h1>
+          <h1 style={{ fontFamily: "'Inter', sans-serif", fontSize: 28, color: '#1e293b', marginBottom: 4 }}>Pedidos</h1>
           <p style={{ fontSize: 14, color: '#64748b' }}>{filtered.length} pedido{filtered.length !== 1 ? 's' : ''}</p>
         </div>
         <button
@@ -151,7 +151,7 @@ export default function Orders() {
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 24 }}>
               <div>
-                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, color: '#1e293b', marginBottom: 4 }}>
+                <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: 20, color: '#1e293b', marginBottom: 4 }}>
                   {selected.id}
                 </h3>
                 <StatusBadge status={selected.status} />
@@ -184,7 +184,7 @@ export default function Orders() {
               })}
               <div style={{ display: 'flex', justifyContent: 'space-between', paddingTop: 12, marginTop: 4, borderTop: '2px solid #eff6ff' }}>
                 <span style={{ fontWeight: 700, color: '#1e293b' }}>Total</span>
-                <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: '#2563eb' }}>{fmt(selected.total)}</span>
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 20, fontWeight: 700, color: '#2563eb' }}>{fmt(selected.total)}</span>
               </div>
             </div>
 
@@ -229,7 +229,7 @@ export default function Orders() {
         <div style={{ position: 'fixed', inset: 0, zIndex: 300, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
           <div style={{ background: 'white', borderRadius: 20, padding: 32, maxWidth: 500, width: '100%', maxHeight: '90vh', overflowY: 'auto' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 24 }}>
-              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, color: '#1e293b' }}>Novo Pedido Manual</h3>
+              <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: 20, color: '#1e293b' }}>Novo Pedido Manual</h3>
               <button onClick={() => setNewOrderOpen(false)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#64748b' }}>
                 <X size={22} />
               </button>

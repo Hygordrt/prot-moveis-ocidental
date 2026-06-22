@@ -42,7 +42,7 @@ export default function AdminLayout() {
             <span style={{ color: 'white', fontSize: 18, fontFamily: 'serif' }}>M</span>
           </div>
           <div>
-            <div style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 14, color: '#eff6ff' }}>
+            <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 14, color: '#eff6ff' }}>
               Móveis Ocidental
             </div>
             <div style={{ fontSize: 10, color: '#2563eb', letterSpacing: 1 }}>ADMIN</div>
@@ -140,7 +140,7 @@ export default function AdminLayout() {
           >
             <Menu size={22} />
           </button>
-          <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 16, color: '#1e293b', fontWeight: 600 }}>
+          <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, color: '#1e293b', fontWeight: 600 }}>
             {navItems.find(n => n.to === location.pathname)?.label || 'Admin'}
           </span>
         </header>

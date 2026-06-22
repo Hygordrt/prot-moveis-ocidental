@@ -55,7 +55,7 @@ export default function ProductCard({ product }) {
 
         <Link to={`/produto/${product.id}`} style={{ textDecoration: 'none', marginBottom: 8 }}>
           <h3 style={{
-            fontFamily: "'Playfair Display', serif",
+            fontFamily: "'Inter', sans-serif",
             fontSize: 14, fontWeight: 600, color: '#1e293b',
             lineHeight: 1.4, margin: 0,
             display: '-webkit-box', WebkitLineClamp: 2,

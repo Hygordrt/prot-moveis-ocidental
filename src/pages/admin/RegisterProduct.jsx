@@ -94,7 +94,7 @@ export default function RegisterProduct() {
   return (
     <div style={{ maxWidth: 860, margin: '0 auto' }}>
       <div style={{ marginBottom: 28 }}>
-        <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 28, color: '#1e293b', marginBottom: 4 }}>
+        <h1 style={{ fontFamily: "'Inter', sans-serif", fontSize: 28, color: '#1e293b', marginBottom: 4 }}>
           {editing ? 'Editar Produto' : 'Cadastrar Produto'}
         </h1>
         <p style={{ fontSize: 14, color: '#64748b' }}>
@@ -121,7 +121,7 @@ export default function RegisterProduct() {
       {mode === 'form' ? (
         <form onSubmit={handleSubmit}>
           <div style={{ background: 'white', borderRadius: 16, padding: 28, boxShadow: '0 2px 12px rgba(0,0,0,0.06)', marginBottom: 20 }}>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 16, color: '#1e293b', marginBottom: 20 }}>
+            <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, color: '#1e293b', marginBottom: 20 }}>
               Informações básicas
             </h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16 }}>
@@ -159,7 +159,7 @@ export default function RegisterProduct() {
           </div>
 
           <div style={{ background: 'white', borderRadius: 16, padding: 28, boxShadow: '0 2px 12px rgba(0,0,0,0.06)', marginBottom: 20 }}>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 16, color: '#1e293b', marginBottom: 20 }}>
+            <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, color: '#1e293b', marginBottom: 20 }}>
               Preço e Estoque
             </h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 16 }}>
@@ -176,7 +176,7 @@ export default function RegisterProduct() {
           </div>
 
           <div style={{ background: 'white', borderRadius: 16, padding: 28, boxShadow: '0 2px 12px rgba(0,0,0,0.06)', marginBottom: 20 }}>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 16, color: '#1e293b', marginBottom: 20 }}>
+            <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, color: '#1e293b', marginBottom: 20 }}>
               Especificações técnicas
             </h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 16 }}>
@@ -206,7 +206,7 @@ export default function RegisterProduct() {
 
           {/* Photo upload */}
           <div style={{ background: 'white', borderRadius: 16, padding: 28, boxShadow: '0 2px 12px rgba(0,0,0,0.06)', marginBottom: 24 }}>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 16, color: '#1e293b', marginBottom: 20 }}>
+            <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, color: '#1e293b', marginBottom: 20 }}>
               Fotos do produto
             </h3>
             <div
@@ -280,7 +280,7 @@ export default function RegisterProduct() {
       ) : (
         /* Import mode */
         <div style={{ background: 'white', borderRadius: 16, padding: 28, boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
-          <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 18, color: '#1e293b', marginBottom: 8 }}>
+          <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: 18, color: '#1e293b', marginBottom: 8 }}>
             Importar via planilha ou nota fiscal
           </h3>
           <p style={{ fontSize: 14, color: '#64748b', marginBottom: 24 }}>

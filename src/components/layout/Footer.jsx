@@ -17,7 +17,7 @@ export default function Footer() {
                 <span style={{ color: 'white', fontSize: 20, fontFamily: 'serif' }}>M</span>
               </div>
               <div>
-                <div style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 18, color: '#eff6ff' }}>
+                <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 18, color: '#eff6ff' }}>
                   Móveis Ocidental
                 </div>
                 <div style={{ fontSize: 10, color: '#2563eb', letterSpacing: 2, textTransform: 'uppercase' }}>
@@ -54,7 +54,7 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <h4 style={{ fontFamily: "'Playfair Display', serif", color: '#eff6ff', fontSize: 16, marginBottom: 20, fontWeight: 600 }}>
+            <h4 style={{ fontFamily: "'Inter', sans-serif", color: '#eff6ff', fontSize: 16, marginBottom: 20, fontWeight: 600 }}>
               Navegação
             </h4>
             {[
@@ -78,7 +78,7 @@ export default function Footer() {
 
           {/* Categorias */}
           <div>
-            <h4 style={{ fontFamily: "'Playfair Display', serif", color: '#eff6ff', fontSize: 16, marginBottom: 20, fontWeight: 600 }}>
+            <h4 style={{ fontFamily: "'Inter', sans-serif", color: '#eff6ff', fontSize: 16, marginBottom: 20, fontWeight: 600 }}>
               Categorias
             </h4>
             {['Sofás', 'Mesas', 'Camas', 'Armários', 'Cadeiras', 'Decoração'].map(cat => (
@@ -97,7 +97,7 @@ export default function Footer() {
 
           {/* Contato */}
           <div>
-            <h4 style={{ fontFamily: "'Playfair Display', serif", color: '#eff6ff', fontSize: 16, marginBottom: 20, fontWeight: 600 }}>
+            <h4 style={{ fontFamily: "'Inter', sans-serif", color: '#eff6ff', fontSize: 16, marginBottom: 20, fontWeight: 600 }}>
               Contato
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>

@@ -23,7 +23,7 @@ export default function Product() {
     return (
       <div style={{ paddingTop: 120, textAlign: 'center', padding: '120px 24px' }}>
         <div style={{ fontSize: 48 }}>😕</div>
-        <h2 style={{ fontFamily: "'Playfair Display', serif", color: '#1e293b', margin: '16px 0 8px' }}>Produto não encontrado</h2>
+        <h2 style={{ fontFamily: "'Inter', sans-serif", color: '#1e293b', margin: '16px 0 8px' }}>Produto não encontrado</h2>
         <Link to="/catalogo" style={{ color: '#2563eb', textDecoration: 'none', fontWeight: 600 }}>← Voltar ao catálogo</Link>
       </div>
     );
@@ -138,7 +138,7 @@ export default function Product() {
               </span>
             </div>
             <h1 style={{
-              fontFamily: "'Playfair Display', serif",
+              fontFamily: "'Inter', sans-serif",
               fontSize: 'clamp(24px, 3vw, 36px)', color: '#1e293b',
               lineHeight: 1.2, marginBottom: 16,
             }}>
@@ -150,7 +150,7 @@ export default function Product() {
             </div>
 
             <div style={{ marginBottom: 24 }}>
-              <div style={{ fontSize: 36, fontWeight: 700, color: '#1e293b', fontFamily: "'Playfair Display', serif" }}>
+              <div style={{ fontSize: 36, fontWeight: 700, color: '#1e293b', fontFamily: "'Inter', sans-serif" }}>
                 {fmt(product.price)}
               </div>
               <div style={{ fontSize: 13, color: '#64748b', marginTop: 4 }}>
@@ -196,7 +196,7 @@ export default function Product() {
 
             {/* Specs */}
             <div style={{ background: 'white', borderRadius: 16, padding: 24, boxShadow: '0 2px 12px rgba(0,0,0,0.05)' }}>
-              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 16, color: '#1e293b', marginBottom: 16 }}>
+              <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, color: '#1e293b', marginBottom: 16 }}>
                 Especificações Técnicas
               </h3>
               <table style={{ width: '100%', borderCollapse: 'collapse' }}>

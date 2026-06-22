@@ -22,7 +22,7 @@ function MetricCard({ icon: Icon, label, value, sub, color }) {
           <Icon size={18} color={color} />
         </div>
       </div>
-      <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 28, fontWeight: 700, color: '#1e293b' }}>
+      <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 28, fontWeight: 700, color: '#1e293b' }}>
         {value}
       </div>
       {sub && <div style={{ fontSize: 12, color: '#94a3b8' }}>{sub}</div>}
@@ -53,7 +53,7 @@ export default function Dashboard() {
   return (
     <div>
       <div style={{ marginBottom: 28 }}>
-        <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 28, color: '#1e293b', marginBottom: 4 }}>
+        <h1 style={{ fontFamily: "'Inter', sans-serif", fontSize: 28, color: '#1e293b', marginBottom: 4 }}>
           Dashboard
         </h1>
         <p style={{ fontSize: 14, color: '#64748b' }}>Visão geral do seu negócio</p>
@@ -71,7 +71,7 @@ export default function Dashboard() {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: 20, marginBottom: 28 }}>
         {/* Sales chart */}
         <div style={{ background: 'white', borderRadius: 16, padding: 24, boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
-          <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 17, color: '#1e293b', marginBottom: 20 }}>
+          <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, color: '#1e293b', marginBottom: 20 }}>
             Vendas × Custo por Mês
           </h3>
           <ResponsiveContainer width="100%" height={240}>
@@ -89,7 +89,7 @@ export default function Dashboard() {
 
         {/* Top products */}
         <div style={{ background: 'white', borderRadius: 16, padding: 24, boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
-          <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 17, color: '#1e293b', marginBottom: 20 }}>
+          <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, color: '#1e293b', marginBottom: 20 }}>
             Produtos Mais Vendidos
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
@@ -122,7 +122,7 @@ export default function Dashboard() {
 
       {/* Recent orders */}
       <div style={{ background: 'white', borderRadius: 16, padding: 24, boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
-        <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 17, color: '#1e293b', marginBottom: 20 }}>
+        <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, color: '#1e293b', marginBottom: 20 }}>
           Últimas Movimentações
         </h3>
         <div style={{ overflowX: 'auto' }}>

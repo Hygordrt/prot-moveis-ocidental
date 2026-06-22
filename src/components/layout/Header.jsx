@@ -75,6 +75,7 @@ export default function Header() {
               href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os móveis."
               target="_blank"
               rel="noopener noreferrer"
+              className="whatsapp-header-btn"
               style={{
                 display: 'flex', alignItems: 'center', gap: 8,
                 background: '#25D366', color: 'white',
@@ -84,7 +85,7 @@ export default function Header() {
               }}
             >
               <MessageCircle size={16} />
-              <span className="hide-mobile">WhatsApp</span>
+              <span>WhatsApp</span>
             </a>
             <button
               onClick={() => setMenuOpen(v => !v)}
@@ -126,7 +127,7 @@ export default function Header() {
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
           .hamburger-btn { display: flex !important; }
-          .hide-mobile { display: none; }
+          .whatsapp-header-btn { display: none !important; }
         }
       `}</style>
     </header>
