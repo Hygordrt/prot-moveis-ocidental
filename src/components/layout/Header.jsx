@@ -42,7 +42,7 @@ export default function Header() {
               <span style={{ color: 'white', fontSize: 20, fontFamily: 'serif' }}>M</span>
             </div>
             <div>
-              <div style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 20, color: '#1e293b', lineHeight: 1 }}>
+              <div style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800, fontSize: 20, color: '#1e293b', lineHeight: 1 }}>
                 Móveis Ocidental
               </div>
               <div style={{ fontSize: 11, color: '#2563eb', letterSpacing: 2, textTransform: 'uppercase' }}>
